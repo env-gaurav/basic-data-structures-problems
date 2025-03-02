@@ -85,8 +85,14 @@ def countOddEven(num):
         num=num//10
     return even,odd
 
+def isPowerOf2(n):
+    n>0 and (n & (n-1))
 
 num = 12345
+
+testCases = [12,14,16,32,128,8]
+for test in testCases:
+    print(isPowerOf2(test))
 
 print(countOddEven(num))
 print(isArmstrong(153))
